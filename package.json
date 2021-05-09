@@ -1,0 +1,32 @@
+{
+  "name": "domready",
+  "version": "0.0.1",
+  "description": "Execute a function when the DOM is ready",
+  "author": "John King",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3bound/domready.git"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            [
+              "@babel/preset-env",
+              {
+                "useBuiltIns": "usage",
+                "corejs": 3.9
+              }
+            ]
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "ramda": "^0.27.1"
+  }
+}
